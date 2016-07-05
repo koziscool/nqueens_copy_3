@@ -1,0 +1,19 @@
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.light-square {
+  background-color: white;
+}
+
+.dark-square {
+  background-color: darkgrey;
+}
+
+.has-queen {
+  content:url('Chess_queen_icon.png');
+}
