@@ -1,6 +1,4 @@
 
-
-
 var controller = {
 
   model: solver,
@@ -14,6 +12,9 @@ var controller = {
     this.model.init( size );
     this.view.init();
 
+    this.model.solve()
+    this.view.showSolution();
+
     var finish = new Date();
     console.log( "finish", finish ); 
     console.log( "elapsed", finish - start, "milliseconds" ); 
@@ -24,5 +25,4 @@ var controller = {
 $(document).ready( function() {
   controller.init( 10 );
 });
-
 
