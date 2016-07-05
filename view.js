@@ -33,8 +33,8 @@ var boardView = {
 
   showSolution: function() {
 
-    for( var i = 0; i < this.model.size * this.model.size; i++ ) {
-      var idString = '#square-' + i;
+    for( var square in  this.model.solution ) {
+      var idString = '#square-' + this.model.solution[square];
       $(idString).addClass('has-queen');
     }
   }

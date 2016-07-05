@@ -23,6 +23,6 @@ var controller = {
 }
 
 $(document).ready( function() {
-  controller.init( 10 );
+  controller.init( 12 );
 });
 
